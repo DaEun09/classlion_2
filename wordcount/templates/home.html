@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <br><br>
+    <div class="big">
+        <div class="alert alert-info" role="alert" style="margin: auto; text-align: center; width: 1200px;">
+            <br>
+            
+            <h1><i class="far fa-check-circle"></i>&nbsp 안녕하세요, 여기서 글자를 카운트하세요! </h1>
+            <br>
+            <a class="btn btn-outline-info" href="{% url 'about' %}" style="font-size: 20px">About</a>
+            <br><br>
+            <form action="{% url 'result' %}">
+                <textarea cols="100" rows="10" name="fulltext"></textarea>
+                <br><br>
+                <input class="btn btn-info" type="submit" value="Count!">
+            </form>
+        </div>
+        <br>
+        <p style="font-size:15px; margin-left: 1350px;">멋쟁이 사자처럼 7기 최다은</p>
+    </div>
+</body>
